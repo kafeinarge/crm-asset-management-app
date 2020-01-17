@@ -1,16 +1,19 @@
 package com.turkcell.crm.assetmanagement.document;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
+import java.io.Serializable;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @ToString
-@EqualsAndHashCode(of = "tckn")
+@EqualsAndHashCode(of = "identityNumber")
 @Data
-public class Customer {
+public class Customer implements Serializable {
 
     private String name;
 
-    private String tckn;
+    private String identityNumber;
 
 }

@@ -1,14 +1,15 @@
 package com.turkcell.crm.assetmanagement.document;
 
 import com.turkcell.crm.assetmanagement.document.base.BaseEntity;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @ToString
 @EqualsAndHashCode(callSuper = true)
 @Data

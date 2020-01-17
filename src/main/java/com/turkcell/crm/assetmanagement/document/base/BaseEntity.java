@@ -1,5 +1,6 @@
 package com.turkcell.crm.assetmanagement.document.base;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.data.annotation.Id;
