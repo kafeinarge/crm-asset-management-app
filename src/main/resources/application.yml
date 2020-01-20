@@ -10,9 +10,18 @@ spring:
   # MONGODB
   data:
     mongodb:
-      authentication-database: admin
-      database: turkcell-crm
-      host: localhost
-      port: 27017
-      username: root
-      password: root
+#      authentication-database: admin
+#      database: turkcell-crm
+#      host: localhost
+#      port: 27017
+#      username: root
+#      password: root
+       authentication-database: admin
+       database: turkcell-crm
+       host: 165.22.22.133
+       port: 31786
+       username: root
+       password: kafein2020!...
+
+server:
+  port: 8034
