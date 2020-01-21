@@ -22,19 +22,10 @@ spring:
 
   # APPLICATION
 spring:
-  application:
-    name: turkcell-crm-asset-management
   profiles: prod
   # MONGODB
   data:
     mongodb:
-      authentication-database: admin
-      database: turkcell-crm
-      host: 165.22.22.133
-      port: 31786
-      username: root
-      password: kafein2020!...
-
 #      authentication-database: admin
 #      database: turkcell-crm
 #      host: localhost
@@ -51,4 +42,4 @@ spring:
 server:
   port: 8080
   servlet:
-    context-path: /assetmanagment
+    context-path: /assetmanagement

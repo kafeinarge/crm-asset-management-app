@@ -37,7 +37,9 @@ public class OrderServiceImplTest {
     public void findByCustomerIdentityNumberTest() throws Exception {
 
         when(orderRepository.findByCustomerIdentityNumber("1")).thenReturn(createOrderList());
+        when(orderRepository.findByCustomerIdentityNumber("2")).thenThrow(new Exception());
         Assert.assertEquals(orderService.findByCustomerIdentityNumber("1"),createOrderListCustomerDTO());
+        Assert.assertNotEquals(orderService.findByCustomerIdentityNumber("2"),createOrderListCustomerDTO());
     }
 
     private List<Order> createOrderList(){
