@@ -2,6 +2,7 @@ package com.turkcell.crm.assetmanagement.mapper;
 
 import com.turkcell.crm.assetmanagement.document.Catalog;
 import com.turkcell.crm.assetmanagement.dto.CatalogDTO;
+import com.turkcell.crm.assetmanagement.dto.ConfirmCatalogDTO;
 import com.turkcell.crm.assetmanagement.mapper.base.BaseMapper;
 import org.springframework.stereotype.Component;
 

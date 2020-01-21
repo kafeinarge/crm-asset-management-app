@@ -10,6 +10,6 @@ import java.util.Optional;
 @Repository
 public interface OrderRepository extends MongoRepository<Order, String> {
 
-    Optional<List<Order>> findByCustomerIdentityNumber(String identityNumber);
+    List<Order> findByCustomerIdentityNumber(String identityNumber);
 
 }
