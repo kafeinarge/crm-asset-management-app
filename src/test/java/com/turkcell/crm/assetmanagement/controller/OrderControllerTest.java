@@ -56,7 +56,6 @@ public class OrderControllerTest {
         MvcResult result1 = mockMvc.perform(MockMvcRequestBuilders.post("/orders?id=2").accept(MediaType.APPLICATION_JSON)).andReturn();
         MockHttpServletResponse response1 = result1.getResponse();
         assertNotEquals(HttpStatus.OK.value(), response1.getStatus());
-
     }
 
     private OrderListForCustomerDTO createOrderListCustomerDTO() {
