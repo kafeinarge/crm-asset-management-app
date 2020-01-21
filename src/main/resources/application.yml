@@ -17,13 +17,13 @@ spring:
 #      username: root
 #      password: root
        authentication-database: admin
-       database: turkcell-crm
-       host: 165.22.22.133
-       port: 31786
+       database: ${MONGO_INITDB_DATABASE}
+       host: mongodb-service
+       port: ${MONGO_INITDB_PORT}
        username: root
-       password: kafein2020!...
+       password: ${MONGO_INITDB_ROOT_PASSWORD}
 
 server:
   port: 8080
   servlet:
-    context-path: asset-management
+    context-path: /assetmanagment
