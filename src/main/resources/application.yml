@@ -34,3 +34,21 @@ spring:
       port: 31786
       username: root
       password: kafein2020!...
+
+#      authentication-database: admin
+#      database: turkcell-crm
+#      host: localhost
+#      port: 27017
+#      username: root
+#      password: root
+       authentication-database: admin
+       database: ${MONGO_INITDB_DATABASE}
+       host: mongodb-service
+       port: ${MONGO_INITDB_PORT}
+       username: root
+       password: ${MONGO_INITDB_ROOT_PASSWORD}
+
+server:
+  port: 8080
+  servlet:
+    context-path: /assetmanagment
