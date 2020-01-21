@@ -24,4 +24,6 @@ spring:
        password: kafein2020!...
 
 server:
-  port: 8034
+  port: 8080
+  servlet:
+    context-path: asset-management
